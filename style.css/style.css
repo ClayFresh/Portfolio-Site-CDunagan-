@@ -3090,3 +3090,51 @@ iframe.fullscreen-case-study-video {
       max-width: 1200px !important;
     }
   }
+
+  /* MacBook Pro & landscape-specific fixes */
+@media (min-width: 1024px) and (orientation: landscape) {
+    /* Center elements without changing dimensions */
+    .headshot-container {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      /* Preserve original width */
+      transform: none !important; /* Prevent any 3D transforms from affecting centering */
+    }
+    
+    /* Center the profile content wrapper */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Center media player */
+    .case-study-carousel, 
+    .spotify-player {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 80% !important; /* Limit width on very wide screens */
+    }
+    
+    /* Center contact card */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .contact-card {
+      /* Don't modify width, just center it */
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+  
+  /* Very large screens only (like large external monitors) */
+  @media (min-width: 1400px) and (orientation: landscape) {
+    /* Additional centering for extra-wide screens */
+    main > section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
