@@ -2952,3 +2952,85 @@ iframe.fullscreen-case-study-video {
     overflow-y: auto !important;
     padding: 20px !important;
   }
+
+  /*new stuff (maybe ?)*/
+
+  /* Landscape orientation fixes */
+@media (orientation: landscape) {
+    /* Center hero content */
+    .hero {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    /* Center profile content */
+    .profile-content {
+      max-width: 80%;
+      margin: 0 auto;
+      align-items: center;
+    }
+    
+    /* Ensure case studies are centered */
+    .case-studies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ensure spotify player stays centered */
+    .spotify-player {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /* Make sure main container stays centered */
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Width fixes for wider screens */
+@media (min-width: 1200px) and (orientation: landscape) {
+    /* Set a max-width for the main content to prevent stretching */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    /* Make sure headings and text maintain proper width */
+    .main-title, .hero-text h2 {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Ensure split view containers don't stretch too wide */
+    .split-view-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Additional landscape improvements */
+@media (orientation: landscape) {
+    /* Fix for large screens in landscape */
+    .hero-image-container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    
+    /* Keep text readable on wider screens */
+    .profile-text-content, .skills-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /* Ensure buttons and controls stay properly aligned */
+    .carousel-controls {
+      justify-content: center;
+      padding: var(--space-xs) var(--space-lg);
+    }
+  }
