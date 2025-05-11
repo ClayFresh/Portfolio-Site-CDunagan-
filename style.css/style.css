@@ -3267,3 +3267,61 @@ iframe.fullscreen-case-study-video {
       height: 100% !important;
     }
   }
+
+  /* Clear fix for MacBook Pro & landscape orientation */
+@media (min-width: 768px) and (orientation: landscape) {
+    /* Fix for profile section */
+    .profile-content {
+      display: block !important; /* Change from flex/grid to block */
+      text-align: center !important;
+      width: 100% !important;
+    }
+    
+    /* Center the headshot container */
+    .headshot-container {
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      float: none !important;
+      width: 280px !important; /* Fixed width */
+    }
+    
+    /* Fix media player */
+    .spotify-player,
+    .case-study-carousel {
+      width: 80% !important;
+      max-width: 800px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    
+    /* Split view container */
+    .split-view-container {
+      width: 100% !important;
+      max-width: 800px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    
+    /* Force profile text to be centered */
+    .profile-text {
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 80% !important;
+      max-width: 800px !important;
+      text-align: center !important;
+    }
+    
+    /* Center all section content */
+    main > section {
+      text-align: center !important;
+    }
+    
+    /* Center contact card */
+    .contact-card {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 600px !important;
+    }
+  }
