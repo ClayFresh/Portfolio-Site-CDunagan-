@@ -3138,3 +3138,132 @@ iframe.fullscreen-case-study-video {
       align-items: center;
     }
   }
+
+  /* Landscape orientation fixes */
+@media (orientation: landscape) {
+    /* Center headshot in profile section */
+    .headshot-container {
+      margin: 0 auto !important;
+      float: none !important;
+      width: 280px !important; /* Keep consistent width */
+      max-width: 280px !important;
+    }
+    
+    /* Center profile content */
+    .profile-content {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 90% !important;
+      max-width: 1000px !important;
+      margin: 0 auto !important;
+    }
+    
+    /* Profile text content centered and readable width */
+    .profile-text-content, 
+    .profile-text {
+      max-width: 800px !important;
+      margin: 0 auto !important;
+      text-align: center !important;
+    }
+    
+    /* Fix media player stretching */
+    .spotify-player {
+      width: 90% !important;
+      max-width: 800px !important;
+      margin: 0 auto !important;
+      height: auto !important;
+    }
+    
+    /* Case study container sizing */
+    .case-study-carousel {
+      width: 90% !important;
+      max-width: 800px !important;
+      margin: 0 auto !important;
+    }
+    
+    /* Split view container responsive sizing */
+    .split-view-container {
+      max-width: 800px !important;
+      margin: 0 auto !important;
+      height: auto !important;
+    }
+    
+    /* Video container aspect ratio fix */
+    .video-container {
+      aspect-ratio: 16/9 !important;
+      height: auto !important;
+    }
+    
+    /* Focus areas centered */
+    .focus-areas {
+      max-width: 800px !important;
+      margin: 0 auto !important;
+    }
+  }
+  
+  /* MacBook Pro specific fixes */
+  @media (min-width: 1024px) and (orientation: landscape) {
+    /* Ensure consistent sizing on MacBook screens */
+    .headshot-container {
+      width: 300px !important;
+      max-width: 300px !important;
+    }
+    
+    /* Ensure container doesn't stretch too wide on MacBook */
+    .spotify-player,
+    .case-study-carousel,
+    .split-view-container {
+      max-width: 850px !important;
+    }
+    
+    /* Maintain proper aspect ratios for videos */
+    .case-study-video {
+      object-fit: contain !important;
+      max-height: 450px !important;
+    }
+  }
+  
+  /* Additional fixes for very wide screens */
+  @media (min-width: 1400px) and (orientation: landscape) {
+    /* Constrain maximum width on large displays */
+    main {
+      max-width: 1400px !important;
+      margin: 0 auto !important;
+    }
+    
+    .headshot-container {
+      width: 320px !important;
+      max-width: 320px !important;
+    }
+    
+    .spotify-player,
+    .case-study-carousel,
+    .split-view-container {
+      max-width: 1000px !important;
+    }
+  }
+  
+  /* Fix for split-view content aspect ratio */
+  .split-view-content {
+    height: auto !important;
+    min-height: 400px !important;
+  }
+  
+  /* Fix for horizontal layout of split view on landscape */
+  @media (orientation: landscape) {
+    .split-view-content {
+      flex-direction: row !important;
+    }
+    
+    .video-panel {
+      width: 65% !important;
+      height: 100% !important;
+    }
+    
+    .lyrics-panel {
+      width: 35% !important;
+      height: 100% !important;
+    }
+  }
