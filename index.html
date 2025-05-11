@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayton Dunagan - UI/UX Designer Portfolio</title>
+    <link rel="stylesheet" href="/style.css/style.css">
+    <!-- Adding Vanilla-tilt.js for 3D hover effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#top-tracks" class="skip-link">Skip to case studies</a>
+  
+    <!-- Mobile menu overlay -->
+    <div class="nav-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <path d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+        </button>
+        <div class="nav-left" id="nav-left">
+            <a href="#top-tracks" class="nav-link">Top Tracks</a>
+            <a href="#featured-designer" class="nav-link">Featured Designer</a>
+            <a href="#skills-interests" class="nav-link">Skills & Interests</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://www.linkedin.com/in/clayton-dunagan-955a961ab/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="4" cy="4" r="2" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="main-title">
+                <span style="animation-delay: 0.1s">Clayton</span>
+                <span style="animation-delay: 0.3s">Dunagan</span>
+                <span style="animation-delay: 0.5s">-</span>
+                <span style="animation-delay: 0.7s">UI/UX</span>
+                <span style="animation-delay: 0.9s">Designer</span>
+            </h1>
+            <div class="hero-image-container depth-card" data-tilt data-tilt-max="5">
+                <div class="hero-image">
+                    <img 
+                        src="/images:/IMG_1309.jpg"
+                        alt="Clayton Dunagan Action Shot" 
+                        class="action-shot fade-in delay-1"
+                        width="800" 
+                        height="450"
+                    >
+                </div>
+                <div class="hero-shine"></div>
+            </div>
+            <div class="hero-text">
+                <h2>Aspiring to build intuitive music experiences that click.</h2>
+                <h2>Bringing fresh design perspectives & music industry knowledge.</h2>
+                <h2>Encouraging discovery & social engagement</h2>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies" id="top-tracks" aria-labelledby="case-studies-heading">
+            <h2 id="case-studies-heading" class="visually-hidden">Case Studies</h2>
+            <div class="case-study-carousel">
+                <div class="spotify-player depth-card media-player-shadow">
+                    <!-- Split View Container -->
+                    <div class="split-view-container">
+                        <div class="split-view-header">
+                            <span class="split-view-title">Case Study Content</span>
+                            <div class="split-view-controls">
+                                <button class="expand-split-view-btn" title="Expand View" aria-label="Expand case study content">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="split-view-content">
+                            <!-- Video Panel -->
+                            <div class="video-panel">
+                                <div class="video-container">
+                                    <video class="case-study-video" controls>
+                                        <source src="" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            
+                            <!-- Lyrics Panel -->
+                            <div class="lyrics-panel">
+                                <div class="lyrics-scroll-container">
+                                    <div class="lyrics-content" aria-live="polite">
+                                        <!-- Content populated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="split-view-progress">
+                            <div class="progress-bar">
+                                <div class="progress-completed"></div>
+                            </div>
+                            <span class="current-timestamp">0:00</span>
+                            <span class="total-duration">3:45</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Track Info Section -->
+                    <div class="track-info">
+                        <h3 class="case-study-title">CASE STUDY TITLE</h3>
+                        <p class="case-study-description">Short description of case study</p>
+                    </div>
+                    
+                    <!-- Player Controls -->
+                    <div class="carousel-controls" role="group" aria-label="Case study navigation controls">
+                        <div class="controls-left">
+                            <button class="control-btn favorite-btn" title="Save to Favorites" aria-label="Save to favorites">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="controls-center">
+                            <button class="control-btn prev-btn" title="Previous Project" aria-label="Previous project">←</button>
+                            <button class="control-btn play-btn large" title="Auto-Play Projects" aria-label="Play or pause auto-scrolling">▶</button>
+                            <button class="control-btn next-btn" title="Next Project" aria-label="Next project">→</button>
+                        </div>
+                        <div class="controls-right">
+                            <!-- View toggle button will be added here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add a new fullscreen split view that combines both video and lyrics -->
+         <!-- Updated fullscreen view with navigation controls -->
+<div class="split-view-fullscreen" role="dialog" aria-labelledby="fullscreen-split-title" aria-hidden="true">
+    <div class="fullscreen-header">
+        <div class="fullscreen-track-info">
+            <span id="fullscreen-split-title" class="fullscreen-title">Case Study</span>
+            <span class="fullscreen-description">Short description</span>
+        </div>
+        <button class="minimize-split-view-btn" title="Minimize View" aria-label="Minimize case study content">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>
+            </svg>
+        </button>
+    </div>
+    
+    <div class="fullscreen-split-content">
+        <!-- Fullscreen Video Panel -->
+        <div class="fullscreen-video-panel">
+            <div class="fullscreen-video-container">
+                <video class="fullscreen-case-study-video" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Fullscreen Lyrics Panel -->
+        <div class="fullscreen-lyrics-panel">
+            <div class="fullscreen-lyrics-content" aria-live="polite">
+                <!-- Content mirrored from lyrics-content -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="fullscreen-progress">
+        <div class="progress-bar">
+            <div class="progress-completed"></div>
+        </div>
+        <span class="current-timestamp">0:00</span>
+        <span class="total-duration">3:45</span>
+    </div>
+    
+    <!-- Added Player Controls for Fullscreen -->
+    <div class="fullscreen-controls" role="group" aria-label="Fullscreen case study navigation controls">
+        <div class="fullscreen-controls-left">
+            <button class="fullscreen-control-btn fullscreen-favorite-btn" title="Save to Favorites" aria-label="Save to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="fullscreen-controls-center">
+            <button class="fullscreen-control-btn fullscreen-prev-btn" title="Previous Project" aria-label="Previous project">←</button>
+            <button class="fullscreen-control-btn fullscreen-play-btn large" title="Auto-Play Projects" aria-label="Play or pause auto-scrolling">▶</button>
+            <button class="fullscreen-control-btn fullscreen-next-btn" title="Next Project" aria-label="Next project">→</button>
+        </div>
+        <div class="fullscreen-controls-right">
+            <!-- If needed, you can add additional controls here -->
+        </div>
+    </div>
+</div>       
+        </section>
+
+        <!-- Featured Designer Section -->
+        <section class="profile" id="featured-designer" aria-labelledby="featured-designer-title">
+            <div class="featured-designer">
+                <h2 id="featured-designer-title" class="featured-designer-title">Featured Designer</h2>
+                <h3 class="featured-designer-subtitle">"Clayton Dunagan"</h3>
+            </div>
+
+            <div class="profile-content">
+                <div class="headshot-container depth-card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="headshot">
+                        <img 
+                            src="/images:/image3.jpeg" 
+                            alt="Clayton Dunagan Headshot" 
+                            class="action-shot headshot fade-in delay-2"
+                            width="280"
+                            height="373"
+                        >
+                    </div>
+                    <div class="headshot-shine"></div>
+                </div>
+                <div class="profile-text">
+                    <div class="profile-text-content depth-card text-card">
+                        <p>A Junior UI/UX designer bringing music industry instincts to digital design.</p>
+                        <p>From artist management to live events, I know what turns an audience into fans on stage or on screen</p>
+                        <p>My music business degree & industry experience let me speak both creative vision and business strategy</p>
+                    </div>
+                    
+                    <div class="focus-areas depth-card">
+                        <h3>Area of Focus:</h3>
+                        <ul>
+                            <li>Crafting intuitive digital experiences</li>
+                            <li>Bringing event planning precision to design</li>
+                            <li>Building stronger artist-fan connections</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Interests Section -->
+        <section id="skills-interests">
+            <div id="skills-interests-carousel">
+                <div id="skills-interests-nav">
+                    <button id="skills-prev-btn" class="skills-carousel-button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    
+                    <div id="skills-carousel-indicators">
+                        <div class="skills-indicator active" data-index="0"></div>
+                        <div class="skills-indicator" data-index="1"></div>
+                    </div>
+                    
+                    <button id="skills-next-btn" class="skills-carousel-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div id="skills-carousel-slides">
+                    <!-- Skills Section -->
+                    <div class="skills-carousel-slide">
+                        <h2 class="skills-heading">Skills & Interests</h2>
+                        <div class="skills-content">
+                            <p>I combine a background in artist management and event coordination with a growing expertise in UI/UX design, blending creative strategy with digital innovation.</p>
+                            <p>As a UI/UX designer with a strong focus on user experience, I create intuitive digital experiences for the music industry and beyond, while expanding my skills in front-end development to better bridge design and technology.</p>
+                            <p>I thrive in creative, collaborative environments where I can apply my understanding of artists, audiences, and branding to craft tools that keep the human element at the heart of digital spaces.</p>
+                            <p>I'm passionate about design and technology, but outside of work, I enjoy stepping back to recharge, stay inspired, and keep learning at my own pace — whether it's coding a small project, brainstorming new ideas, or just exploring creative outlets.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Discover Section -->
+                    <div class="skills-carousel-slide">
+                        <h2 class="skills-heading">Discover More</h2>
+                        <div class="skills-content">
+                            <ul class="skills-tracklist">
+                                <li class="skills-track">
+                                    <button class="skills-track-toggle">
+                                        <span class="skills-track-number">01.</span> Education
+                                    </button>
+                                    <div class="skills-track-content">
+                                        <p>Associates of Applied Science in Music Business, Performance & Technology | Austin Community College</p>
+                                        <p>UI/UX Professional Certification | University of Texas</p>
+                                    </div>
+                                </li>
+                                <li class="skills-track">
+                                    <button class="skills-track-toggle">
+                                        <span class="skills-track-number">02.</span> Experience
+                                    </button>
+                                    <div class="skills-track-content">
+                                        <p>Creative Consultant / Artist Manager | 2018 - Present</p>
+                                        <p>UI/UX Designer | 2025 - Present</p>
+                                    </div>
+                                </li>
+                                <li class="skills-track">
+                                    <button class="skills-track-toggle">
+                                        <span class="skills-track-number">03.</span> Technical Skills
+                                    </button>
+                                    <div class="skills-track-content">
+                                        <p>UI/UX: Design Systems, Accessibility, Prototyping, User Testing, Journey Mapping</p>
+                                        <p>Code: Conversational HTML/CSS/JS | Front-End Cert in Progress</p>
+                                        <p>Tools: Figma, GitHub, ChatGPT, Claude, Slack, Google Workspace</p>
+                                        <p>Music Business: Artist Development, Event Coordination, Branding</p>
+                                    </div>
+                                </li>
+                                <li class="skills-track">
+                                    <button class="skills-track-toggle">
+                                        <span class="skills-track-number">04.</span> Soft Skills
+                                    </button>
+                                    <div class="skills-track-content">
+                                        <p>Empathy, Problem Solving, Communication, Feedback Incorporation</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Card -->
+        <section class="contact-section">
+            <div class="contact-card depth-card" data-tilt data-tilt-max="10">
+                <div class="card-inner">
+                    <div>
+                        <h3>Contact</h3>
+                        <p>Email<br>Professional@cdunagan.com</p>
+                        <p>Phone<br>737-395-8208</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="floating-back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- A11y live region for announcements -->
+    <div id="a11y-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Canvas for visualizer background -->
+    <canvas id="visualizer-canvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="/script.js/script.js"></script>
+</body>
+</html>
