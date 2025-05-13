@@ -1654,14 +1654,17 @@ body.fullscreen-active {
 /* ===================================================================
  * Profile Section
  * =================================================================== */
-.profile {
+ .profile {
     padding: var(--space-xs);
-    max-width: 100%;
+    max-width: 1000px; /* Match with other sections */
     margin: 0 auto;
     border: none !important;
-    margin: 0 !important;
     position: relative;
     background: none;
+    width: 100%; /* Ensure it takes full available width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content horizontally */
 }
 
 .featured-designer {
@@ -1669,6 +1672,10 @@ body.fullscreen-active {
     margin-bottom: var(--space-sm);
     background: none;
     border: none;
+    width: 100%; /* Ensure full width */
+    max-width: 1000px; /* Match the max-width of profile-content */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .featured-designer-title {
