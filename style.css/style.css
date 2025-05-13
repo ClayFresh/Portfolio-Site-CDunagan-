@@ -516,6 +516,9 @@ input:focus,
     flex-direction: column;
     transform-style: preserve-3d;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Track Info Section */
@@ -1166,6 +1169,8 @@ input:focus,
     border: none !important;
     transform-style: preserve-3d;
     transition: var(--card-transition);
+    max-width: 800px;
+    margin: auto;
 }
   
 .split-view-container:hover {
@@ -1223,6 +1228,13 @@ input:focus,
     outline: none;
     box-shadow: 0 0 0 2px var(--primary-green);
     border-radius: 4px;
+}
+
+@media (min-width: 1400px) {
+    .spotify-player,
+    .split-view-container {
+        max-width: 900px; /* Slightly larger on very wide screens, but still contained */
+    }
 }
   
 /* Split View Content - Now using top/bottom layout with fixed heights */
@@ -1677,8 +1689,8 @@ body.fullscreen-active {
     flex-direction: column;
     gap: var(--space-md);
     align-items: center; /* Center the content */
-    border: none;
-    background: none;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* HEADSHOT CONTAINER */
@@ -1693,6 +1705,7 @@ body.fullscreen-active {
     transition: var(--card-transition);
     width: 280px; /* Fixed width instead of 100% */
     max-width: 90%; /* Ensure it doesn't exceed screen on very small devices */
+    margin: 0 auto;
 }
 
 .headshot-container:hover {
@@ -1774,6 +1787,25 @@ img.headshot {
 
 .focus-areas li:last-child {
     margin-bottom: 0;
+}
+
+/* Add these media queries right after the base styles */
+@media (min-width: 768px) {
+    .headshot-container {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headshot-container {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .headshot-container {
+        width: 400px;
+    }
 }
 
 /* ===================================================================
